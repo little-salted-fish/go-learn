@@ -1,0 +1,11 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+*.tmp
+*.cbZip
+*.hprof
+*.icf
+*.log
+*.out
