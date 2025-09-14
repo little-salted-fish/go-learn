@@ -2,10 +2,8 @@
 
 ## task1 任务
 - task1_1</br>
-&emsp;只出现一次的数字：给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。可以使用 for 循环遍历数组，结合 if 条件判断和 map 数据结构来解决，例如通过 map 记录每个元素出现的次数，然后再遍历 map 找到出现次数为1的元素。
-
+&emsp;[只出现1次的数字](https://leetcode.cn/problems/single-number/description/)
 - task1_2</br>
-&emsp;回数
-
-- task1_3 </br>
-  &emsp;匹配括号
+&emsp;[回数](https://leetcode.cn/problems/palindrome-number/)
+- task1_3</br>
+&emsp;[匹配括号](https://leetcode.cn/problems/valid-parentheses/solutions/373578/you-xiao-de-gua-hao-by-leetcode-solution/)

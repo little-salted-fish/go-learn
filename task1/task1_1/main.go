@@ -8,8 +8,9 @@ import (
 
 func main() {
 
-	nums := getRandomIntSplice(5)
-	fmt.Println("随机int 切片", nums)
+	//nums := getRandomIntSplice(5)
+	//fmt.Println("随机int 切片", nums)
+	nums := []int{1, 1, 2, 3, 3, 2, 5, 6, 5, 6, 7}
 	result := singleNumber(nums)
 	fmt.Println("结果是", result)
 
@@ -27,7 +28,7 @@ func singleNumber(nums []int) int {
 	}
 
 	for k, v := range recordMap {
-		if v == 2 {
+		if v == 1 {
 			return k
 		}
 	}
