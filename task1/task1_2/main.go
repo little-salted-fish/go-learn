@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func main() {
 
-	b := isPalindrome(124213)
+	b := isPalindrome(0)
 	fmt.Println(b)
 
 	b = isPalindrome(121)
@@ -18,23 +17,29 @@ func main() {
 
 }
 
-func isPalindrome(m int) bool {
-	x := int64(m)
+func isPalindrome(x int) bool {
+	if x < 0 {
+		return false
+	}
+	//x := int64(m)
+	//格式化有问题
+	//str := strconv.FormatInt(x, 10)
 
-	str := strconv.FormatInt(x, 10)
+	//
+	str := fmt.Sprintf("%d", x)
+	//直接用数字转字符
+	//str := strconv.Itoa(m)
 
 	l := len(str)
 	half := l / 2
-	flag := false
+	flag := true
 	i := 0
 
 	for {
 		if i > half-1 {
 			break
 		}
-		if str[i] == str[l-1-i] {
-			flag = true
-		} else {
+		if str[i] != str[l-1-i] {
 			flag = false
 		}
 		i++
