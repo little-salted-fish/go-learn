@@ -47,3 +47,10 @@ func isPalindrome(x int) bool {
 
 	return flag
 }
+
+//最优算法是 数字翻转，  x%10 取到最后一个数，然后 在*10 就得到翻转的数，还有点蒙
+
+func isPalindromeSuper(x int) bool {
+
+	return false
+}
