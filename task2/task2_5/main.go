@@ -39,13 +39,13 @@ func noLockAdd() {
 	wg1 := sync.WaitGroup{}
 	wg1.Add(10)
 
-	automic := atomic.Int64{}
+	autoInt := atomic.Int64{}
 
 	for i := 0; i < 10; i++ {
-		go add1000NoLock(&automic, &wg1)
+		go add1000NoLock(&autoInt, &wg1)
 	}
 	wg1.Wait()
-	fmt.Println("无锁结果", automic.Load())
+	fmt.Println("无锁结果", autoInt.Load())
 }
 
 func add1000NoLock(num *atomic.Int64, wg *sync.WaitGroup) {
